@@ -50,6 +50,9 @@ class ScreenshotGuardPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                 setSecureFlag(enable)
                 result.success(null)
             }
+            "getPlatformVersion" -> {
+                result.success("Android ${android.os.Build.VERSION.RELEASE}")
+            }
             else -> {
                 result.notImplemented()
             }
