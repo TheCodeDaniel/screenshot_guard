@@ -18,6 +18,10 @@ class MethodChannelScreenshotGuard extends ScreenshotGuardPlatform {
 
   @override
   Future<void> enableSecureFlag(bool enable) async {
-    await methodChannel.invokeMethod('enableSecureFlag', {'enable': enable});
+    try {
+      await methodChannel.invokeMethod('enableSecureFlag', {'enable': enable});
+    } on PlatformException catch (e) {
+      throw Exception("Error enabling secure flag: $e");
+    }
   }
 }
