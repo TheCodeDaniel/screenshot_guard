@@ -6,7 +6,7 @@ class ScreenshotGuard {
   }
 
   /// Enables or disables the secure flag to prevent screenshots.
-  Future<void> enableSecureFlag(bool enable) {
+  Future<void> enableSecureFlag({required bool enable}) {
     return ScreenshotGuardPlatform.instance.enableSecureFlag(enable);
   }
 }
