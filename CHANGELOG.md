@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+- feat: first instance of package to restrict screenshots and screen recording.
