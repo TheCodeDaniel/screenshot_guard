@@ -42,8 +42,7 @@ void main() {
     ScreenshotGuardPlatform.instance = fakePlatform;
 
     // Test enableSecureFlag method
-    await screenshotGuardPlugin.enableSecureFlag(true);
-
+    await screenshotGuardPlugin.enableSecureFlag(enable: true);
     // Add any necessary verification or assertions if needed
   });
 }
