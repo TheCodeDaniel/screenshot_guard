@@ -5,16 +5,17 @@
 Pod::Spec.new do |s|
   s.name             = 'screenshot_guard'
   s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.summary          = 'A Flutter plugin for restricting screenshot and screen recording.'
   s.description      = <<-DESC
 A new Flutter plugin project.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/TheCodeDaniel/screenshot_guard.git'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'TheCodeDaniel' => 'thecodedaniel@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
+  s.dependency       'ScreenProtectorKit', '~> 1.3.1'
   s.platform = :ios, '12.0'
 
   # Flutter.framework does not contain a i386 slice.
