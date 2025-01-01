@@ -3,7 +3,7 @@ PODS:
   - integration_test (0.0.1):
     - Flutter
   - ScreenProtectorKit (1.3.1)
-  - screenshot_guard (0.0.1):
+  - screenshot_guard (0.0.3):
     - Flutter
     - ScreenProtectorKit (~> 1.3.1)
 
@@ -29,7 +29,7 @@ SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
   ScreenProtectorKit: 83a6281b02c7a5902ee6eac4f5045f674e902ae4
-  screenshot_guard: fa7e20ce310937747b8149d84a2f4b009b5333ed
+  screenshot_guard: db3e9ed4ee94f2db90e7bc792a28e18d9d467961
 
 PODFILE CHECKSUM: 864620248d353e26c8fd7a1ee6b0cf275b9a0138
 

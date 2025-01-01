@@ -16,7 +16,7 @@
 
    ```yaml
    dependencies:
-     screenshot_guard: ^{version}
+     screenshot_guard: ^<latest>
    ```
 
 2. Run the `flutter pub get` to fetch the package.
@@ -54,12 +54,13 @@ class ScreenshotGuardExample extends StatefulWidget {
 
 class _ScreenshotGuardExampleState extends State<ScreenshotGuardExample> {
   bool isProtected = false;
+  final _screenshotGuardPlugin = ScreenshotGuard();
 
   void toggleProtection() async {
     if (isProtected) {
-      await ScreenshotGuard().enableSecureFlag(false);
+      _screenshotGuardPlugin.enableSecureFlag(false);
     } else {
-      await ScreenshotGuard().enableSecureFlag(true);
+      _screenshotGuardPlugin.enableSecureFlag(true);
     }
     setState(() {
       isProtected = !isProtected;
@@ -100,7 +101,7 @@ class _ScreenshotGuardExampleState extends State<ScreenshotGuardExample> {
 
 - Description: Enables or disables the secure flag to control screenshot and screen recording
 - Parameters:
-  `enable`: A boolean (`tru`e to enable protection, `false` to disable it).
+  `enable`: A boolean (`true` to enable protection, `false` to disable it).
 - Returns: A `Future<void>`
 
 # Contributions

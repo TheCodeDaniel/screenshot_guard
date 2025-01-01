@@ -1,11 +1,11 @@
 name: screenshot_guard
 description: "A Flutter plugin to protect your app from screenshots and screen recordings"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/TheCodeDaniel/screenshot_guard.git
 
 environment:
-  sdk: ^3.6.0
-  flutter: ">=3.3.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=2.12.0"
 
 dependencies:
   flutter:
