@@ -23,6 +23,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
+    _screenshotGuardPlugin.enableSecureFlag(enable: true);
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
