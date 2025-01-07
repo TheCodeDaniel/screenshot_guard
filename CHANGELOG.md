@@ -10,3 +10,7 @@
 
 - docs: documentation update
 - feat: allow support on previous dart version
+
+## 0.0.4
+
+- fix: fixed crashing issue on IOS versions
