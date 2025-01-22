@@ -14,3 +14,7 @@
 ## 0.0.4
 
 - fix: fixed crashing issue on IOS versions
+
+## 0.0.5
+
+- feat: Added "Windows Operating System" Support
