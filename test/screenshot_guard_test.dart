@@ -4,9 +4,7 @@ import 'package:screenshot_guard/screenshot_guard_platform_interface.dart';
 import 'package:screenshot_guard/screenshot_guard_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-class MockScreenshotGuardPlatform
-    with MockPlatformInterfaceMixin
-    implements ScreenshotGuardPlatform {
+class MockScreenshotGuardPlatform with MockPlatformInterfaceMixin implements ScreenshotGuardPlatform {
   // Mock for enableSecureFlag method
   @override
   Future<void> enableSecureFlag(bool enable) async {
@@ -20,8 +18,7 @@ class MockScreenshotGuardPlatform
 }
 
 void main() {
-  final ScreenshotGuardPlatform initialPlatform =
-      ScreenshotGuardPlatform.instance;
+  final ScreenshotGuardPlatform initialPlatform = ScreenshotGuardPlatform.instance;
 
   test('$MethodChannelScreenshotGuard is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelScreenshotGuard>());
