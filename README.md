@@ -7,6 +7,7 @@
 - 🚫 Prevent users from taking screenshots.
 - 📹 Detect and react to screen recording activity.
 - 📱 Supports both Android and iOS platforms.
+- 💻 Supports Windows desktop platform.
 
 ---
 
@@ -92,6 +93,12 @@ class _ScreenshotGuardExampleState extends State<ScreenshotGuardExample> {
 ### IOS
 
 - The plugin uses iOS system notifications to detect screenshot and screen recording activities.
+
+### Windows
+
+- The plugin uses the Windows SetWindowDisplayAffinity API to prevent screen capture and video recording.
+- The `SetWindowDisplayAffinity` API is specific to windows with the `WS_OVERLAPPEDWINDOW` style. Make sure your window meets this requirement.
+- In case of failure, the error returned can be checked in the logs to diagnose issues related to display affinity.
 
 ## API Reference
 
