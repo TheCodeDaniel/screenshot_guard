@@ -36,5 +36,7 @@ flutter:
         pluginClass: ScreenshotGuardPlugin
       ios:
         pluginClass: ScreenshotGuardPlugin
+      windows:
+        pluginClass: ScreenshotGuardPlugin
 
 license: MIT
