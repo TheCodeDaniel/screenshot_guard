@@ -1,0 +1,22 @@
+PODS:
+  - FlutterMacOS (1.0.0)
+  - screenshot_guard (0.0.1):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - screenshot_guard (from `Flutter/ephemeral/.symlinks/plugins/screenshot_guard/macos`)
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  screenshot_guard:
+    :path: Flutter/ephemeral/.symlinks/plugins/screenshot_guard/macos
+
+SPEC CHECKSUMS:
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  screenshot_guard: 35f7269ace53ce0a407e21f822e72c9f4375125e
+
+PODFILE CHECKSUM: 7eb978b976557c8c1cd717d8185ec483fd090a82
+
+COCOAPODS: 1.15.2
