@@ -44,7 +44,7 @@ public class ScreenshotGuardPlugin: NSObject, FlutterPlugin, NSApplicationDelega
             // Block screenshots: hide window from screen capture
             window.sharingType = .none
             // window.level = NSWindow.Level(CGShieldingWindowLevel())
-            window.level = NSWindow.Level(Int(CGShieldingWindowLevel()))
+            // window.level = NSWindow.Level(Int(CGShieldingWindowLevel()))
             // window.level = .screenSaver
         } else {
             // Restore defaults
