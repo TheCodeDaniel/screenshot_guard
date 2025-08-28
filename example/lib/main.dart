@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:screenshot_guard/screenshot_guard.dart';
+import 'package:screenshot_guard_example/second_page_view.dart';
 
 void main() => runApp(const MyApp());
 
@@ -48,7 +49,22 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Plugin example app')),
-        body: Center(child: Text('Running on: $_platformVersion\n')),
+        body: Builder(
+          // 👈 provides a new context under Navigator
+          builder: (context) => Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(child: Text('Running on: $_platformVersion\n')),
+              TextButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SecondPageView()),
+                ),
+                child: const Text("Go to Second Page"),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
